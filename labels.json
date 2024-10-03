@@ -1,0 +1,47 @@
+[
+  {
+    "name": "⛑️ Build",
+    "description": "빌드 관련 파일 수정",
+    "color": "E99695"
+  },
+  {
+    "name": "🧭 Chore",
+    "description": "개발 세팅",
+    "color": "F9D0C4"
+  },
+  {
+    "name": "🎨 Design",
+    "description": "퍼블리싱 및 디자인 수정",
+    "color": "FEF2C0"
+  },
+  {
+    "name": "📑 Docs",
+    "description": "문서 관련",
+    "color": "C2E0C6"
+  },
+  {
+    "name": "🚀 Feat",
+    "description": "기능 구현 및 수정",
+    "color": "BFDADC"
+  },
+  {
+    "name": "🏷 Fix",
+    "description": "버그 수정",
+    "color": "C5DEF5"
+  },
+  {
+    "name": "🧹 Refactor",
+    "description": "코드 리팩토링",
+    "color": "BFD4F2"
+  },
+  {
+    "name": "✨ Style",
+    "description": "코드 포맷팅, 코드 오타, 함수명 수정 등 스타일 수정",
+    "color": "D4C5F9"
+  },
+  {
+    "name": "📁 Test",
+    "description": "테스트 관련 코드",
+    "color": "D1D5D8"
+  }
+]
