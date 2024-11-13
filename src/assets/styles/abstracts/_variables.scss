@@ -1,0 +1,65 @@
+$colors: (
+  gray: (
+    50: #ffffff,
+    100: #f5f5f5,
+    200: #eeeeee,
+    300: #e0e0e0,
+    400: #bdbdbd,
+    500: #9e9e9e,
+    600: #757575,
+    700: #616161,
+    800: #424242,
+    900: #000000,
+  ),
+  green: (
+    50: #edfbec,
+    100: #e4f9e3,
+    200: #c8f4c4,
+    300: #4cda41,
+    400: #44c43b,
+    500: #3dae34,
+    600: #39a431,
+    700: #2e8327,
+    800: #22621d,
+    900: #1b4c17,
+  ),
+  violet: (
+    50: #ebebf6,
+    100: #e1e1f1,
+    200: #c2c1e2,
+    300: #3937a3,
+    400: #333293,
+    500: #2e2c82,
+    600: #2b297a,
+    700: #222162,
+    800: #1a1949,
+    900: #141339,
+  ),
+  red: #d32f2f,
+  yellow: #f9a825,
+  blue: #0091ea,
+);
+
+$color-token: (
+  primary: (
+    normal: map-get(map-get($colors, violet), 300),
+    hover: map-get(map-get($colors, violet), 400),
+    pressed: map-get(map-get($colors, violet), 500),
+  ),
+  secondary: (
+    normal: map-get(map-get($colors, violet), 600),
+    hover: map-get(map-get($colors, violet), 700),
+    pressed: map-get(map-get($colors, violet), 800),
+  ),
+  tertiary: (
+    normal: map-get(map-get($colors, gray), 300),
+    hover: map-get(map-get($colors, gray), 400),
+    pressed: map-get(map-get($colors, gray), 500),
+  ),
+  status: (
+    error: map-get($colors, red),
+    warning: map-get($colors, yellow),
+    success: map-get(map-get($colors, green), 300),
+    info: map-get($colors, blue),
+  ),
+);
