@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 $colors: (
   gray: (
     50: #ffffff,
@@ -42,24 +44,24 @@ $colors: (
 
 $color-token: (
   primary: (
-    normal: map-get(map-get($colors, violet), 300),
-    hover: map-get(map-get($colors, violet), 400),
-    pressed: map-get(map-get($colors, violet), 500),
+    normal: map.get(map.get($colors, violet), 300),
+    hover: map.get(map.get($colors, violet), 400),
+    pressed: map.get(map.get($colors, violet), 500),
   ),
   secondary: (
-    normal: map-get(map-get($colors, violet), 600),
-    hover: map-get(map-get($colors, violet), 700),
-    pressed: map-get(map-get($colors, violet), 800),
+    normal: map.get(map.get($colors, violet), 600),
+    hover: map.get(map.get($colors, violet), 700),
+    pressed: map.get(map.get($colors, violet), 800),
   ),
   tertiary: (
-    normal: map-get(map-get($colors, gray), 300),
-    hover: map-get(map-get($colors, gray), 400),
-    pressed: map-get(map-get($colors, gray), 500),
+    normal: map.get(map.get($colors, gray), 300),
+    hover: map.get(map.get($colors, gray), 400),
+    pressed: map.get(map.get($colors, gray), 500),
   ),
   status: (
-    error: map-get($colors, red),
-    warning: map-get($colors, yellow),
-    success: map-get(map-get($colors, green), 300),
-    info: map-get($colors, blue),
+    error: map.get($colors, red),
+    warning: map.get($colors, yellow),
+    success: map.get(map.get($colors, green), 300),
+    info: map.get($colors, blue),
   ),
 );
