@@ -1,0 +1,16 @@
+@use './variables' as *;
+@use 'sass:map';
+
+@function color-scale($palette, $shade) {
+  @if $shade == null {
+    @return map.get($colors, $palette);
+  }
+  @return map.get(map.get($colors, $palette), $shade);
+}
+
+@function color-token($token, $state) {
+  @if $state == null {
+    @return map.get($color-token, $token);
+  }
+  @return map.get(map.get($color-token, $token), $state);
+}

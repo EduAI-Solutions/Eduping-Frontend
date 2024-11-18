@@ -1,0 +1,9 @@
+@use '../abstracts/functions' as *;
+
+.auth-layout {
+  // margin: 4.5rem;
+  // padding: 2.5rem;
+  // gap: 1.5rem;
+  height: 100vh;
+  background-color: color-token(primary, normal);
+}
