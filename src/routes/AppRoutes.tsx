@@ -7,10 +7,9 @@ import {
 import AuthLayout from '@/layouts/AuthLayout';
 import MainLayout from '@/layouts/MainLayout';
 import Chat from '@/pages/Chat/Chat';
-import Login from '@/pages/Login/Login';
-import Intro from '@/pages/Intro/Intro';
+import Login from '@/pages/Login/page';
 
-const isAuthenticated = false;
+const isAuthenticated = true;
 
 const AppRoutes = () => {
   return (
@@ -18,7 +17,6 @@ const AppRoutes = () => {
       <Routes>
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />
-          <Route path="/intro" element={<Intro />} />
         </Route>
         <Route
           element={isAuthenticated ? <MainLayout /> : <Navigate to="/login" />}

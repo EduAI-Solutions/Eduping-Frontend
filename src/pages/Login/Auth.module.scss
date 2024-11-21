@@ -1,0 +1,32 @@
+@use '../../styles/abstracts/functions' as *;
+
+.container {
+  display: flex;
+  background-color: white;
+  width: 37.375rem;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.75rem;
+  flex-shrink: 0;
+  border-radius: 1.5rem;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  color: color-token(primary, normal);
+}
+
+.auth_container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+}
