@@ -1,0 +1,104 @@
+$slide-duration: 0.5s;
+$slide-delay: 0.5s;
+$animation-timing: ease-out;
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@mixin slide-animation {
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown $slide-duration $animation-timing $slide-delay forwards;
+}
+
+@mixin fixed-element($position) {
+  position: fixed;
+  @if map-has-key($position, top) {
+    top: map-get($position, top);
+  }
+  @if map-has-key($position, bottom) {
+    bottom: map-get($position, bottom);
+  }
+  @if map-has-key($position, left) {
+    left: map-get($position, left);
+  }
+  @if map-has-key($position, right) {
+    right: map-get($position, right);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.description {
+  font-size: calc(5vh);
+  text-align: center;
+  color: white;
+  @include fixed-element(
+    (
+      top: 20%,
+    )
+  );
+  height: 30%;
+  z-index: 1;
+}
+
+.favicon {
+  height: 25%;
+  margin: 2rem;
+  @include fixed-element(());
+}
+
+.logo {
+  height: 30%;
+  @include fixed-element(
+    (
+      bottom: 0,
+    )
+  );
+  @include slide-animation;
+}
+
+.diamond {
+  display: flex;
+  @include fixed-element(());
+  @include slide-animation;
+
+  &.diamond1 {
+    z-index: 2;
+    @include fixed-element(
+      (
+        left: 35%,
+        bottom: 20%,
+      )
+    );
+  }
+  &.diamond2 {
+    @include fixed-element(
+      (
+        right: 20%,
+      )
+    );
+  }
+  &.diamond3 {
+    @include fixed-element(
+      (
+        left: 10%,
+        top: 20%,
+      )
+    );
+  }
+}

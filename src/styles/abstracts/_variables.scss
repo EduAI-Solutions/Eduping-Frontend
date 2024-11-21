@@ -54,9 +54,9 @@ $color-token: (
     pressed: map.get(map.get($colors, violet), 800),
   ),
   tertiary: (
-    normal: map.get(map.get($colors, gray), 300),
-    hover: map.get(map.get($colors, gray), 400),
-    pressed: map.get(map.get($colors, gray), 500),
+    normal: map.get(map.get($colors, green), 300),
+    hover: map.get(map.get($colors, green), 400),
+    pressed: map.get(map.get($colors, green), 500),
   ),
   status: (
     error: map.get($colors, red),
@@ -64,4 +64,14 @@ $color-token: (
     success: map.get(map.get($colors, green), 300),
     info: map.get($colors, blue),
   ),
+);
+
+$base-font-size: 16px;
+$breakpoints: (
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1400px,
 );

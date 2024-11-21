@@ -1,0 +1,11 @@
+@use './variables' as *;
+
+@mixin respond($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+.font-bold {
+  font-weight: bold;
+}
