@@ -1,0 +1,82 @@
+@use '../styles/abstracts/functions' as *;
+.button {
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1rem;
+  border-radius: 5rem;
+  border: 2px solid transparent;
+  gap: 0.5rem;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+
+  &.primary {
+    background-color: color-token(primary, normal);
+    color: color-token(tertiary, normal);
+
+    &:hover {
+      background-color: color-token(primary, hover);
+      color: color-token(tertiary, hover);
+    }
+
+    &:active {
+      background-color: color-token(primary, pressed);
+      color: color-token(tertiary, pressed);
+    }
+
+    &.disabled {
+      background-color: color-scale(gray, 100);
+      color: color-scale(gray, 600);
+      cursor: not-allowed;
+    }
+  }
+
+  &.secondary {
+    border: 2px solid color-scale(violet, 600);
+    background: var(--White, #fff);
+    color: color-scale(violet, 600);
+    &:hover {
+      background-color: color-scale(gray, 100);
+      color: color-scale(violet, 700);
+    }
+
+    &:active {
+      background-color: color-scale(gray, 200);
+      color: color-scale(violet, 800);
+    }
+
+    &.disabled {
+      background-color: color-scale(gray, 100);
+      color: color-scale(gray, 600);
+      border: color-scale(gray, 100);
+      cursor: not-allowed;
+    }
+  }
+
+  &.small {
+    width: 7.5rem;
+  }
+
+  &.medium {
+    width: 11rem;
+  }
+
+  &.large {
+    width: 25rem;
+  }
+
+  &.full {
+    width: 100%;
+  }
+
+  .icon {
+    height: 1.5rem;
+  }
+}
