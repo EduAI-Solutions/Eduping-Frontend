@@ -1,7 +1,7 @@
 @use './base/reset.scss' as *;
-
+@use './base/global.scss' as *;
 @use './abstracts/functions' as *;
 @use './abstracts/variables' as *;
-
 @use './abstracts/mixins' as *;
 @use './layouts/auth-layout' as *;
+@use './layouts/main-layout' as *;

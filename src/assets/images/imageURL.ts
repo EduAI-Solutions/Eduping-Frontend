@@ -9,4 +9,13 @@ export const LOGO = {
 
 export const ICON = {
   CHAT: 'https://i.ibb.co/zmF70Cg/Chats.png',
+  TRASH: 'https://i.ibb.co/3RMPWvT/Trash.png',
+  UPLOAD: 'https://i.ibb.co/P5sdh6W/back-icon.png',
+  XCIRCLE: 'https://i.ibb.co/sHCtxCQ/XCircle.png',
+};
+
+export const UPLOAD_STATUS = {
+  DONE: 'https://i.ibb.co/30T5XDg/Property-1-Cloud-Check.png',
+  ERROR: 'https://i.ibb.co/YyQst8Q/Property-1-Cloud-X.png',
+  LOADING: 'https://i.ibb.co/MNxYLFP/Property-1-Cloud-Arrow-Up.png',
 };

@@ -1,0 +1,14 @@
+@use '../abstracts/functions' as *;
+
+.main-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.outlet-layout {
+  width: calc(100% - 24rem);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
