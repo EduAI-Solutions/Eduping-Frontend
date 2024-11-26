@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Chat = () => {
+const Landing = () => {
   return <div></div>;
 };
 
-export default Chat;
+export default Landing;
