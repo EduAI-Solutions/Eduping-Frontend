@@ -4,11 +4,17 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
+  background-color: white;
 }
 
 .outlet-layout {
   width: calc(100% - 24rem);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2.5rem;
   background-color: white;
 }

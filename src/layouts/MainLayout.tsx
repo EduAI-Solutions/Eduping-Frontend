@@ -30,7 +30,9 @@ const MainLayout = () => {
         </Button>
       </div>
       <div className="outlet-layout">
-        <Outlet />
+        <div className={styles.outlet}>
+          <Outlet />
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,12 @@
-import React from 'react';
+import InputChat from '@/components/InputChat';
 
 const Landing = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Welcome to Chat App</h1>
+      <InputChat />
+    </div>
+  );
 };
 
 export default Landing;
