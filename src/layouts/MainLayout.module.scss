@@ -144,6 +144,7 @@
 .outlet {
   display: flex;
   flex-direction: column;
-  max-width: 50rem;
+  width: 50rem;
   height: 100vh;
+  background-color: green;
 }
