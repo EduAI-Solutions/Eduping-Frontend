@@ -1,0 +1,20 @@
+@use '../styles/abstracts/functions' as *;
+
+.send_icon {
+  margin: 0rem 0.25rem;
+  .path {
+    fill: color-token(tertiary, normal);
+  }
+
+  &:hover {
+    .path {
+      fill: color-token(tertiary, hover);
+    }
+  }
+
+  &:active {
+    .path {
+      fill: color-token(tertiary, pressed);
+    }
+  }
+}

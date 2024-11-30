@@ -1,0 +1,59 @@
+@use '../styles/abstracts/functions' as *;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid color-scale(gray, 500);
+  transition: all 0.3s ease;
+  width: 100%;
+  min-height: 3.25rem;
+}
+
+.container:hover {
+  border-color: color-scale(gray, 600);
+}
+
+.container:focus-within {
+  border-color: color-scale(gray, 800);
+}
+
+.container:has(input:disabled) {
+  background-color: color-scale(gray, 100);
+  border-color: color-scale(gray, 300);
+  cursor: not-allowed;
+}
+
+.container.generate {
+  border-color: color-token(tertiary, normal);
+}
+
+.input:disabled {
+  color: color-scale(gray, 500);
+  cursor: not-allowed;
+}
+
+.icon {
+  margin: 0rem 0.5rem;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  margin: 0;
+}
