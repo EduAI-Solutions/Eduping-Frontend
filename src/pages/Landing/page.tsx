@@ -4,8 +4,8 @@ import { useState } from 'react';
 import Button from '@/components/Button';
 
 interface InputValueType {
-  text: string; // 텍스트 입력 값
-  file: File | null; // 파일 입력 값
+  text: string;
+  file: File | null;
 }
 
 const Landing = () => {

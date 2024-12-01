@@ -9,6 +9,7 @@ import MainLayout from '@/layouts/MainLayout';
 import Chat from '@/pages/Chat/page';
 import Landing from '@/pages/Landing/page';
 import Login from '@/pages/Login/page';
+import NotFound from '@/pages/NotFound/page';
 
 const isAuthenticated = true;
 
@@ -24,6 +25,7 @@ const AppRoutes = () => {
         >
           <Route path="/" element={<Landing />} />
           <Route path="/c/:chatId" element={<Chat />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>
